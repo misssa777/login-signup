@@ -27,29 +27,29 @@
         .container{
             margin: 30px ;
         }
-        .loginpage{
+        .signuppage{
             border: 1px solid black;
             border-radius: 50px;
             background-color: rgba(40, 10, 75, 0.3);
             width:320px;
-            height: 350px;
+            height: 450px;
             text-align: center;
             color: #fff;
             box-shadow: 0px 2px 100px #000;
         }
-        .loginpage h2{
+        .signuppage h2{
             text-align: center;
             font-size: 40px;
             margin-bottom: 25px;
             font-family: "Poppins", sans-serif;
             
         }
-        .loginpage a{
+        .signuppage a{
             text-decoration: none;
             color: plum
         }
         
-        .loginpage a:hover{
+        .signuppage a:hover{
             text-decoration: underline;
         }
         
@@ -63,12 +63,12 @@
         .text-input input{
             padding: 2px;
         }
-        .loginpage button{
+        .signuppage button{
             margin-bottom: 15px;
             border: none;
             background-color: plum;
             height: 30px;
-            width: 100px;
+            width: 110px;
             border-radius: 162px;
             cursor: pointer;
             font-family: "Poppins", sans-serif;
@@ -76,35 +76,47 @@
             transition: background-color .4s ease;
         }
         
-        .loginpage button:hover{
+        .signuppage button:hover{
             background-color:purple;
         }
-        .loginpage p {
+        .signuppage p {
             font-family: "Poppins", sans-serif;
         }
     </style>
 </head>
 <body>
     <div class="body">
-    <div class="loginpage">
+    <div class="signuppage">
         <div class="container">
-        <h2>Login</h2>
+        <h2>Sign up</h2>
         <form>
             <div class="text-input">
                 <label for="username"><span class="material-symbols-outlined">
                     person
                     </span></label>
-                <input type="text" class="username" name="username" placeholder="Username">
+                <input type="text" class="username" name="username" placeholder=" Username">
             </div>
+            <div class="text-input">
+                <label for="email"><span class="material-symbols-outlined">
+                    mail
+                    </span></label>
+                <input type="text" class="email" name="email" placeholder=" Email"> 
+            </div> 
             <div class="text-input">
                 <label for="password"><span class="material-symbols-outlined">
                     lock
                     </span></label>
-                <input type="password" class="password" name="password" placeholder="Password"> 
+                <input type="password" class="password" name="password" placeholder=" Password"> 
             </div> 
-            <button >Log in</button>
+            <div class="text-input">
+                <label for="confirm-password"><span class="material-symbols-outlined">
+                    lock
+                    </span></label>
+                <input type="password" class="confirm-password" name="confirm-password" placeholder=" Confirm password"> 
+            </div> 
+            <button >Sign up</button>
         </form>
-        <p>Don't have an account? <br> <a href="sign_up.html">Sign up</a></p>
+        <p>Already have an account? <br> <a href="login.html">Login</a></p>
     </div>
         
    </div>
